@@ -16,8 +16,9 @@
       <div class="container">
         <div class="box_one_top">
           <div class="box_one_top_left">
-            <p>Overview</p>
-            <p>25 october, Sunday</p>
+            <p class="box_one_p">Overview</p>
+            <p class="box_one_p">25 october, Sunday</p>
+            <button class="open_menu_btn">Open_menu</button>
           </div>
 
           <div class="box_one_top_right">
@@ -29,7 +30,7 @@
           <div class="box_one_middle_left">
 
             <div class="balance">
-
+              <canvas id="first_chart"></canvas>
             </div>
             <div class="spending">
               <div class="spend">
@@ -62,8 +63,85 @@
         </div>
       </div>
     </section>
+
+
+    <section class="two">
+      <div class="container">
+        <div class="box_two_main">
+          <div class="box_two_left">
+            <div class="box_two_left_top">
+              <div class="top_left">
+                <h1>Market</h1>
+                <select name="" id="coin">
+                  <option value="">Bitcoin</option>
+                </select>
+              </div>
+             
+              <select name="" id="month">
+                <option value="">November</option>
+              </select>
+            </div>
+
+            <div class="box_two_left_chart">
+              <canvas id="maket_canvas"></canvas>
+            </div>
+          </div>
+
+          
+
+          <div class="box_two_right">
+
+          </div>
+        </div>
+      </div>
+    </section>
     
   </main>
+
+  <div class="menu_main">
+    
+    <div class="valuet">
+      <h1>valuet</h1>
+    </div>
+
+   
+   
+    <div class="lists_menu">
+      <div class="list">
+        <img src="./public/img/Vector (2).svg" alt="">
+        <p>Overview</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (2).svg" alt="">
+        <p>Wallets</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (3).svg" alt="">
+        <p>Transictions</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group 6.svg" alt="">
+        <p>Exchange</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (4).svg" alt="">
+        <p>market</p>
+      </div>
+
+      <button>Close</button>
+    </div>
+
+    <div class="menu_bootom">
+      <div class="list">
+        <img src="./public/img/Ellipse.svg" alt="">
+        <p>Mike Jakson</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (5).svg" alt="">
+        <p>Log out</p>
+      </div>
+    </div>
+  </div>
 
   
   <script type="module" src="/main.js"></script>
