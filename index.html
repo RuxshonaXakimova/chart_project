@@ -1,13 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="one">
+      <div class="container">
+        <div class="box_one_top">
+          <div class="box_one_top_left">
+            <p>Overview</p>
+            <p>25 october, Sunday</p>
+          </div>
+
+          <div class="box_one_top_right">
+            <button>Add widget</button>
+          </div>
+        </div>
+
+        <div class="box_one_middle">
+          <div class="box_one_middle_left">
+
+            <div class="balance">
+
+            </div>
+            <div class="spending">
+              <div class="spend">
+                <div class="spending_top">
+                  <h1>Spending</h1>
+                  <select name="" id="">
+                    <option value="">January</option>
+                  </select>
+                </div>
+                <div class="spending_bottom">
+                  <h1>$ 5,743.35</h1>
+                  <p>total spending</p>
+                </div>
+              </div>
+              
+              <canvas id="myChart"></canvas>
+            </div>
+
+          </div>
+
+          <div class="box_one_middle_right">
+            <div class="box">
+
+              <!-- <div class="item bitcoin"></div>
+              <div class="item gridcoin"></div>
+              <div class="item ethereum"></div>
+              <div class="item aeternity"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
-    <script type="module" src="/main.js"></script>
-  </body>
+  </main>
+
+  
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="./modules/analytics.js"></script>
+</body>
+
 </html>
