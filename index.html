@@ -1,13 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="one">
+      <div class="container">
+        <div class="box_one_top">
+          <div class="box_one_top_left">
+            <p class="box_one_p">Overview</p>
+            <p class="box_one_p">25 october, Sunday</p>
+            <button class="open_menu_btn">Open_menu</button>
+          </div>
+
+          <div class="box_one_top_right">
+            <button>Add widget</button>
+          </div>
+        </div>
+
+        <div class="box_one_middle">
+          <div class="box_one_middle_left">
+
+            <div class="balance">
+              <canvas id="first_chart"></canvas>
+            </div>
+            <div class="spending">
+              <div class="spend">
+                <div class="spending_top">
+                  <h1>Spending</h1>
+                  <select name="" id="">
+                    <option value="">January</option>
+                  </select>
+                </div>
+                <div class="spending_bottom">
+                  <h1>$ 5,743.35</h1>
+                  <p>total spending</p>
+                </div>
+              </div>
+              
+              <canvas id="myChart"></canvas>
+            </div>
+
+          </div>
+
+          <div class="box_one_middle_right">
+            <div class="box">
+
+              <!-- <div class="item bitcoin"></div>
+              <div class="item gridcoin"></div>
+              <div class="item ethereum"></div>
+              <div class="item aeternity"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="two">
+      <div class="container">
+        <div class="box_two_main">
+          <div class="box_two_left">
+            <div class="box_two_left_top">
+              <div class="top_left">
+                <h1>Market</h1>
+                <select name="" id="coin">
+                  <option value="">Bitcoin</option>
+                </select>
+              </div>
+             
+              <select name="" id="month">
+                <option value="">November</option>
+              </select>
+            </div>
+
+            <div class="box_two_left_chart">
+              <canvas id="maket_canvas"></canvas>
+            </div>
+          </div>
+
+          
+
+          <div class="box_two_right">
+
+          </div>
+        </div>
+      </div>
+    </section>
     
-    <script type="module" src="/main.js"></script>
-  </body>
+  </main>
+
+  <div class="menu_main">
+    
+    <div class="valuet">
+      <h1>valuet</h1>
+    </div>
+
+   
+   
+    <div class="lists_menu">
+      <div class="list">
+        <img src="./public/img/Vector (2).svg" alt="">
+        <p>Overview</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (2).svg" alt="">
+        <p>Wallets</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (3).svg" alt="">
+        <p>Transictions</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group 6.svg" alt="">
+        <p>Exchange</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (4).svg" alt="">
+        <p>market</p>
+      </div>
+
+      <button>Close</button>
+    </div>
+
+    <div class="menu_bootom">
+      <div class="list">
+        <img src="./public/img/Ellipse.svg" alt="">
+        <p>Mike Jakson</p>
+      </div>
+      <div class="list">
+        <img src="./public/img/Group (5).svg" alt="">
+        <p>Log out</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="./modules/analytics.js"></script>
+</body>
+
 </html>
