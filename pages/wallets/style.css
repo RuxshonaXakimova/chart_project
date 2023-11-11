@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one{
+    margin-top: 28px;
+
+}
+
+.wallets_main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mainh1{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+margin-bottom: 24px;
+}
+
+.bar{
+    width: 293px;
+height: 148px;
+flex-shrink: 0;
+border-radius: 5px;
+background: linear-gradient(180deg, rgba(27, 18, 78, 0.20) 0%, #0F0B38 93.37%);
+box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main{
+    width: 280px;
+height: 148px;
+flex-shrink: 0;
+border-radius: 5px;
+background: linear-gradient(237deg, rgba(96, 67, 146, 0.50) -8.06%, rgba(15, 11, 56, 0.50) 96.63%);
+box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+padding: 16px;
+}
+
+.main_top{
+    display: flex;
+    align-items: start;
+    gap: 43px;
+}
+
+.main_h2{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.main_right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main_right_text_h1{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+white-space: nowrap;
+
+}
+
+.main_right_text_p{
+    color: #616A8B;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: right;
+}
+
+.main_bottom_canvas{
+    width: 245px;
+height: 60px;
+flex-shrink: 0;
+}
+
+.main img{
+    width: 56px;
+height: 56px;
+flex-shrink: 0;
+}
