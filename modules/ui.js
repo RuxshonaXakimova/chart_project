@@ -1,3 +1,5 @@
+import Chart from 'chart.js/auto';
+import { wallets_line_chart_mini } from "../modules/analytics";
 export function header_create() {
     let header = document.createElement('header')
     let container = document.createElement('div')
@@ -41,7 +43,7 @@ export function header_create() {
 export function coin_reload(arr, place) {
     place.innerHTML = ""
 
-    for(let i=arr.length-4; i<arr.length; i++){
+    for (let i = arr.length - 4; i < arr.length; i++) {
         let main_div = document.createElement('div')
         let main_div_h1 = document.createElement('h1')
         let main_div_info = document.createElement('div')
@@ -53,7 +55,7 @@ export function coin_reload(arr, place) {
         let left_h2 = document.createElement('h2')
 
         let num = 0
-        for(let nextItem of arr[i].changes){
+        for (let nextItem of arr[i].changes) {
             let box_change = document.createElement('div')
             let box_change_img = document.createElement('img')
             let box_change_right = document.createElement('div')
@@ -62,12 +64,12 @@ export function coin_reload(arr, place) {
 
             box_change.classList.add('box_change')
             box_change_img.classList.add('box_change_img')
-            if(num == 0 ){
+            if (num == 0) {
                 box_change_img.src = './public/img/Frame (1).svg'
             } else {
                 box_change_img.src = './public/img/Vector (1).svg'
             }
-            
+
             box_change_img.alt = ''
             box_change_right.classList.add('box_change_right')
             change_right_h1.classList.add('change_right_h1')
@@ -80,8 +82,8 @@ export function coin_reload(arr, place) {
             box_change_right.append(change_right_h1, change_right_p)
 
             num++
-            if(num == 3){
-                num=1
+            if (num == 3) {
+                num = 1
             }
         }
 
@@ -100,20 +102,20 @@ export function coin_reload(arr, place) {
         left_h1.innerHTML = arr[i].balance
         left_h2.classList.add('left_h2')
         left_h2.innerHTML = arr[i].price
-        
+
         place.append(main_div)
         main_div.append(main_div_h1, main_div_info)
         main_div_info.append(main_div_left, main_div_right)
         main_div_left.append(main_div_img, main_div_price)
         main_div_price.append(left_h1, left_h2)
     }
-    
+
 }
 
 export function reload_cards_wallets(arr, place) {
     place.innerHTMl = ""
 
-    for(let i=arr.length-3; i<arr.length; i++){
+    for (let i = arr.length - 3; i < arr.length; i++) {
         let main = document.createElement('div')
         let main_top = document.createElement('div')
         let main_bottom_canvas = document.createElement('div')
@@ -143,7 +145,13 @@ export function reload_cards_wallets(arr, place) {
         main.append(main_top, main_bottom_canvas)
         main_top.append(main_h2, main_right)
         main_right.append(main_right_texts, main_right_img)
-        main_right_texts.append(main_right_text_h1,main_right_text_p)
+        main_right_texts.append(main_right_text_h1, main_right_text_p)
         main_bottom_canvas.append(canvas)
+
+        wallets_line_chart_mini(canvas)
+
     }
+
+
 }
+

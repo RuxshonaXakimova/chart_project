@@ -128,6 +128,10 @@ hr {
   gap: 19px;
 }
 
+.box_one_middle{
+  gap: 15px;
+}
+
 .box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -222,9 +226,7 @@ text-transform: lowercase;
 margin-top: 6px;
 }
 
-canvas{
-  height: 300px;
-}
+
 
 .main_div_info{
   display: flex;
@@ -476,3 +478,4 @@ text-transform: capitalize;
     left: -100%;
   }
 }
+
